@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shaik Sameer Hussain — Data Analyst | SQL, Power BI, Python</title>
+<meta name="description" content="Data Analyst in Hyderabad building SQL Server, Power BI and Python analytics that turn transactional data into margin, fraud and access insights." />
+<meta property="og:title" content="Shaik Sameer Hussain — Data Analyst | SQL, Power BI, Python" />
+<meta property="og:description" content="Data Analyst in Hyderabad building SQL Server, Power BI and Python analytics that turn transactional data into margin, fraud and access insights." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+html {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%232DD4A0' fill-opacity='0.85'/%3E%3Ccircle cx='12' cy='12' r='10' stroke='%232DD4A0' stroke-width='1.5' stroke-opacity='0.35' fill='none'/%3E%3C/svg%3E") 12 12, auto;
+}
+a, button, [role='button'], input, textarea, select, summary, .btn, .btn-outline {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='6' fill='%232DD4A0' fill-opacity='0.85'/%3E%3Ccircle cx='12' cy='12' r='10' stroke='%232DD4A0' stroke-width='1.5' stroke-opacity='0.35' fill='none'/%3E%3C/svg%3E") 12 12, pointer;
+}
+:root{
+  --background:oklch(0.19 0.035 245);
+  --foreground:oklch(0.96 0.008 240);
+  --card:oklch(0.235 0.036 245);
+  --primary:oklch(0.79 0.14 178);
+  --primary-foreground:oklch(0.18 0.04 220);
+  --muted-foreground:oklch(0.72 0.025 240);
+  --border:oklch(0.33 0.035 245);
+  --surface:oklch(0.22 0.035 245);
+  --highlight:oklch(0.82 0.15 82);
+  --radius:0.75rem;
+  --font-display:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;
+  --font-sans:"DM Sans",ui-sans-serif,system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+  --gradient-hero:radial-gradient(1100px 520px at 12% -10%, color-mix(in oklab, var(--primary) 22%, transparent), transparent),
+                  radial-gradient(900px 480px at 92% 0%, color-mix(in oklab, var(--highlight) 14%, transparent), transparent);
+  --shadow-elegant:0 24px 60px -28px color-mix(in oklab, var(--primary) 40%, transparent);
+}
+*{box-sizing:border-box;margin:0;padding:0;border-color:var(--border)}
+body{background:var(--background);color:var(--foreground);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;line-height:1.6}
+h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-.02em;line-height:1.1}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+header{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border);background:color-mix(in oklab,var(--background) 80%,transparent);backdrop-filter:blur(10px)}
+header nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;max-width:72rem;margin:0 auto;gap:1rem;flex-wrap:wrap}
+.brand{font-family:var(--font-display);font-weight:600;font-size:.9rem}
+.brand span{font-family:var(--font-sans);font-weight:400;font-size:.75rem;color:var(--muted-foreground);margin-left:.5rem}
+.navlinks{display:flex;gap:1.75rem;font-size:.875rem;color:var(--muted-foreground)}
+.navlinks a:hover{color:var(--foreground)}
+.btn{display:inline-block;border-radius:999px;background:var(--primary);color:var(--primary-foreground);padding:.75rem 1.5rem;font-size:.875rem;font-weight:600}
+.btn:hover{opacity:.9}
+.btn-sm{padding:.5rem 1rem;font-size:.75rem}
+.btn-outline{background:var(--surface);color:var(--foreground);border:1px solid var(--border)}
+.btn-outline:hover{border-color:color-mix(in oklab,var(--primary) 50%,var(--border))}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--border);background-image:var(--gradient-hero)}
+.grid-lines{position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(color-mix(in oklab,var(--border) 55%,transparent) 1px,transparent 1px),
+  linear-gradient(90deg,color-mix(in oklab,var(--border) 55%,transparent) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(70% 60% at 50% 0%,black,transparent)}
+.hero-inner{position:relative;padding:6rem 1.5rem;max-width:72rem;margin:0 auto}
+.chip{display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--border);background:var(--surface);padding:.25rem .7rem;font-size:.8rem;color:var(--muted-foreground)}
+.mono{font-family:var(--font-mono)}
+h1{font-size:clamp(2.25rem,5vw,3.75rem);font-weight:700;max-width:56rem;margin-top:1.5rem}
+.text-gradient{background-image:linear-gradient(100deg,var(--primary),var(--highlight));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin-top:1.5rem;max-width:42rem;font-size:1.125rem;color:var(--muted-foreground)}
+.actions{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.metrics{margin-top:4rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:.75rem;overflow:hidden}
+.metrics>div{background:var(--card);padding:1.5rem}
+.metrics dt{font-family:var(--font-display);font-size:1.875rem;font-weight:700;color:var(--primary)}
+.metrics .m-label{margin-top:.25rem;font-size:.875rem;font-weight:500}
+.metrics .m-note{margin-top:.25rem;font-size:.75rem;color:var(--muted-foreground)}
+section.block{border-bottom:1px solid var(--border)}
+.block-inner{max-width:72rem;margin:0 auto;padding:5rem 1.5rem}
+.eyebrow{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--primary)}
+.block h2{margin-top:.75rem;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;max-width:48rem}
+.block-body{margin-top:3rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1.75rem;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);border-color:color-mix(in oklab,var(--primary) 45%,var(--border));box-shadow:var(--shadow-elegant)}
+.grid2{display:grid;gap:1.5rem}
+.about{display:grid;gap:2.5rem}
+.about p{color:var(--muted-foreground);margin-bottom:1rem}
+.label{font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--primary)}
+.headline{margin-top:.75rem;border-left:2px solid var(--highlight);padding-left:1rem;font-size:.9rem;font-weight:500;color:var(--highlight)}
+.bullets{margin-top:1.25rem;display:flex;flex-direction:column;gap:.75rem;font-size:.9rem;color:var(--muted-foreground)}
+.bullets li{display:flex;gap:.75rem}
+.dot{margin-top:.6rem;width:6px;height:6px;flex:none;border-radius:999px;background:var(--primary)}
+.dot.amber{background:var(--highlight)}
+.tags{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.link-primary{margin-top:1.5rem;display:inline-flex;font-size:.875rem;font-weight:600;color:var(--primary)}
+footer{border-top:1px solid var(--border)}
+.footer-inner{max-width:72rem;margin:0 auto;padding:2rem 1.5rem;display:flex;flex-direction:column;gap:.75rem;align-items:center;justify-content:space-between;font-size:.875rem;color:var(--muted-foreground)}
+.footer-inner a:hover{color:var(--foreground)}
+.contact{background-image:var(--gradient-hero);border-top:1px solid var(--border);text-align:center}
+.contact .block-inner{padding:6rem 1.5rem}
+.contact p{margin:1rem auto 0;max-width:36rem;color:var(--muted-foreground)}
+.center-actions{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+@media(min-width:768px){
+  .grid2{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1.4fr 1fr}
+  .footer-inner{flex-direction:row}
+}
+@media(max-width:767px){.navlinks{display:none}}
+@media(min-width:1024px){.metrics{grid-template-columns:repeat(4,1fr)}}
+
+/* ---------- Animations ---------- */
+@keyframes reveal-up { from { opacity:0; transform:translateY(18px);} to { opacity:1; transform:translateY(0);} }
+.reveal { opacity:0; will-change:transform,opacity; }
+.reveal.is-visible { animation: reveal-up .7s cubic-bezier(.22,1,.36,1) forwards; animation-delay: var(--d, 0ms); }
+.hero-enter { animation: reveal-up .8s cubic-bezier(.22,1,.36,1) both; animation-delay: var(--d, 0ms); }
+a.btn, a.btn-outline, .card { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .2s ease; }
+a.btn:hover, a.btn-outline:hover { transform: translateY(-2px); }
+nav a { position:relative; }
+nav a::after { content:""; position:absolute; left:0; bottom:-3px; height:1px; width:100%; background:currentColor; transform:scaleX(0); transform-origin:right; transition:transform .3s ease; }
+nav a:hover::after { transform:scaleX(1); transform-origin:left; }
+.chip { transition: border-color .2s ease, color .2s ease; }
+.chip:hover { border-color: color-mix(in oklab, var(--primary) 50%, var(--border)); color: var(--foreground); }
+
+.hero-name { display:inline-flex; flex-wrap:wrap; font-family:var(--font-display); font-size:clamp(2.5rem,7vw,5.5rem); font-weight:700; letter-spacing:-0.04em; line-height:1.05; background-image:linear-gradient(100deg,var(--primary),var(--highlight)); -webkit-background-clip:text; background-clip:text; color:transparent; margin-top:1rem; }
+to { width:7ch; } }
+50% { border-color:var(--primary); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+  .reveal { opacity:1 !important; }
+}
+</style>
+</head>
+<body id="top">
+<header>
+  <nav>
+    <a href="#top" class="brand">Shaik Sameer Hussain<span>Data Analyst</span></a>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-sm" href="mailto:shaik.sameer.hussain12@gmail.com">Hire me</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="grid-lines" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="chip mono hero-enter" style="--d:0ms">Hyderabad, India · Open to Data Analyst roles</p>
+      <h2 class="hero-name">Shaik Sameer Hussain</h2>
+      <h1 class="hero-enter" style="--d:220ms">I turn messy transactional data into <span class="text-gradient">decisions leaders can act on</span>.</h1>
+      <p class="lead hero-enter" style="--d:340ms">Data Analyst skilled in SQL (T-SQL), Power BI and Python. I build end-to-end analytics — data models, exploratory analysis and stakeholder-ready dashboards — across finance, fraud detection, retail and healthcare.</p>
+      <div class="actions hero-enter" style="--d:440ms">
+        <a class="btn" href="#projects">View case studies</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/shaik-sameer-hussain-425a012bb/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/ShaikSameerHussain12" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-outline" href="https://id-preview--6181610b-5254-4d5a-a1d6-249e8c28facf.lovable.app/__l5e/assets-v1/4a5aa846-570a-41c4-964c-0d5d30616375/shaik-sameer-hussain-resume-v2.pdf" target="_blank" rel="noreferrer" >View resume</a>
+      </div>
+      <dl class="metrics">
+        <div><dt>9.37</dt><dd class="m-label">CGPA / 10</dd><dd class="m-note">B.E. CSE (Data Science)</dd></div>
+        <div><dt>4</dt><dd class="m-label">End-to-end analytics projects</dd><dd class="m-note">SQL → Power BI → recommendation</dd></div>
+        <div><dt>70+</dt><dd class="m-label">T-SQL queries written</dd><dd class="m-note">Across relational data models</dd></div>
+        <div><dt>2,500+</dt><dd class="m-label">Transactions analysed</dd><dd class="m-note">Fraud &amp; risk decomposition</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="block-inner">
+      <p class="eyebrow">01 — About</p>
+      <h2>Analyst who ships the recommendation, not just the chart</h2>
+      <div class="block-body about">
+        <div>
+          <p>I'm a Computer Science (Data Science) undergraduate at Lords Institute of Engineering and Technology, Hyderabad, carrying a 9.37/10 CGPA and graduating in 2027. My work sits where SQL modelling meets business framing: I dig into the data until the number has a cause, then put it in front of stakeholders with a clear next step.</p>
+          <p>Every project below started with a raw dataset and ended with a policy recommendation — a discount threshold, a fraud-flag redesign, a segmentation rebuild, an infrastructure investment priority.</p>
+          <p style="color:var(--foreground)">Coursework: Machine Learning · DBMS · Exploratory Data Analysis · Probability &amp; Statistics · Data Visualization · Data Warehousing.</p>
+        </div>
+        <div class="card">
+          <h3 class="label">Education</h3>
+          <p style="margin-top:.75rem;font-family:var(--font-display);font-size:1.125rem;font-weight:600">B.E. Computer Science (Data Science)</p>
+          <p style="font-size:.875rem;color:var(--muted-foreground)">Lords Institute of Engineering and Technology</p>
+          <p class="mono" style="margin-top:.25rem;font-size:.75rem;color:var(--muted-foreground)">2023 – 2027 · CGPA 9.37/10 · Hyderabad</p>
+          <h3 class="label" style="margin-top:2rem">Leadership</h3>
+          <p style="margin-top:.75rem;font-family:var(--font-display);font-size:1.125rem;font-weight:600">Microsoft Learn Student Ambassador</p>
+          <p style="font-size:.875rem;color:var(--muted-foreground)">Beta tier (2024 – present) — progressed from Alpha through consistent technical contributions, hackathons and programming contests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="block-inner">
+      <p class="eyebrow">02 — Case studies</p>
+      <h2>Four analyses, four business decisions</h2>
+      <div class="block-body grid2">
+
+        <article class="card">
+          <h3 style="font-size:1.25rem;font-weight:600">FashionHub Profitability Analytics</h3>
+          <p class="headline">Margin fell 44.9% → 18.6% past a 21% discount — for 96 extra units.</p>
+          <ul class="bullets">
+            <li><span class="dot"></span><span>Built a 7-table relational data model and 25+ T-SQL queries for a bucketed margin-sensitivity analysis across discount bands.</span></li>
+            <li><span class="dot"></span><span>Delivered a 6-page Power BI dashboard recommending a discount-threshold policy to protect margin.</span></li>
+            <li><span class="dot"></span><span>Flagged an out-of-scope inventory risk: 349 of 1,000 SKUs dead stock while others sold 13–17x current stock.</span></li>
+          </ul>
+          <div class="tags"><span class="chip mono">SQL Server (T-SQL)</span><span class="chip mono">Power BI</span><span class="chip mono">Star Schema</span></div>
+          <a class="link-primary" href="https://github.com/ShaikSameerHussain12" target="_blank" rel="noreferrer">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3 style="font-size:1.25rem;font-weight:600">SecureBank Fraud &amp; Risk Analytics</h3>
+          <p class="headline">The bank's fraud flag was 97% driven by a single condition.</p>
+          <ul class="bullets">
+            <li><span class="dot"></span><span>Analysed 2,512 transactions across 495 accounts with 20+ T-SQL queries to decompose the existing fraud-risk flag.</span></li>
+            <li><span class="dot"></span><span>Segmented customers by occupation: students drove the highest total transaction value on the lowest average balance ($1,570 vs $8,979 for doctors).</span></li>
+            <li><span class="dot"></span><span>Packaged findings into a 5-page executive Power BI dashboard.</span></li>
+          </ul>
+          <div class="tags"><span class="chip mono">SQL Server (T-SQL)</span><span class="chip mono">Power BI</span><span class="chip mono">Segmentation</span></div>
+          <a class="link-primary" href="https://github.com/ShaikSameerHussain12" target="_blank" rel="noreferrer">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3 style="font-size:1.25rem;font-weight:600">Customer Shopping Behavior Analysis</h3>
+          <p class="headline">Subscribers generated less than half the revenue of non-subscribers.</p>
+          <ul class="bullets">
+            <li><span class="dot"></span><span>Cleaned and feature-engineered a 3,900-row retail dataset in Python/Pandas.</span></li>
+            <li><span class="dot"></span><span>Rebuilt flawed fixed-threshold customer segments using percentile-based segmentation.</span></li>
+            <li><span class="dot"></span><span>Found 839 discounted customers still spent above average; revenue split $62,645 vs $170,436 informed discount and subscription redesign.</span></li>
+          </ul>
+          <div class="tags"><span class="chip mono">Python (Pandas)</span><span class="chip mono">SQL</span><span class="chip mono">Power BI</span></div>
+          <a class="link-primary" href="https://github.com/ShaikSameerHussain12" target="_blank" rel="noreferrer">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3 style="font-size:1.25rem;font-weight:600">Healthcare Access &amp; Equity Analytics</h3>
+          <p class="headline">49.7% of patient transfers never reached a completed state.</p>
+          <ul class="bullets">
+            <li><span class="dot"></span><span>Analysed access, referral and capacity data across a 300-facility, 15-district healthcare network.</span></li>
+            <li><span class="dot"></span><span>Quantified a 12.4x disparity-index gap in hospital access between districts.</span></li>
+            <li><span class="dot"></span><span>Directed a Power BI recommendation to prioritise hospital over pharmacy infrastructure investment.</span></li>
+          </ul>
+          <div class="tags"><span class="chip mono">SQL</span><span class="chip mono">Power BI</span><span class="chip mono">Funnel Analysis</span></div>
+          <a class="link-primary" href="https://github.com/ShaikSameerHussain12" target="_blank" rel="noreferrer">View on GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="block-inner">
+      <p class="eyebrow">03 — Experience</p>
+      <h2>Applied analytics in production data</h2>
+      <div class="block-body">
+        <div class="card">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem">
+            <h3 style="font-size:1.25rem;font-weight:600">Data Science Intern · Manac Infotech</h3>
+            <span class="mono" style="font-size:.75rem;color:var(--muted-foreground)">Jul – Aug 2025 · India</span>
+          </div>
+          <ul class="bullets" style="margin-top:1.5rem;gap:1rem">
+            <li><span class="dot amber"></span><span>Engineered a Python-based anomaly detection model to flag water-meter tampering and theft across household accounts.</span></li>
+            <li><span class="dot amber"></span><span>Developed a real-time usage-monitoring dashboard (Python, Matplotlib) tracking consumption trends and surfacing high-risk accounts.</span></li>
+            <li><span class="dot amber"></span><span>Cut false-positive tamper alerts by engineering consumption-pattern features (rolling usage deltas, time-of-day anomalies) and validating flagged accounts against confirmed theft cases; presented findings to cross-functional stakeholders.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="block-inner">
+      <p class="eyebrow">04 — Toolkit</p>
+      <h2>Technical skills</h2>
+      <div class="block-body grid2">
+        <div class="card">
+          <h3 class="label">Programming &amp; Querying</h3>
+          <div class="tags"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">T-SQL</span></div>
+        </div>
+        <div class="card">
+          <h3 class="label">Data Analysis &amp; ML</h3>
+          <div class="tags"><span class="chip">Pandas</span><span class="chip">EDA</span><span class="chip">Data Cleaning</span><span class="chip">Feature Engineering</span><span class="chip">Customer Segmentation</span><span class="chip">Anomaly Detection</span><span class="chip">Statistical Analysis</span></div>
+        </div>
+        <div class="card">
+          <h3 class="label">Visualization &amp; BI</h3>
+          <div class="tags"><span class="chip">Power BI</span><span class="chip">Excel (Pivot Tables, VLOOKUP)</span><span class="chip">Matplotlib</span><span class="chip">Dashboard Development</span><span class="chip">KPI Reporting</span></div>
+        </div>
+        <div class="card">
+          <h3 class="label">Databases, Tools &amp; Concepts</h3>
+          <div class="tags"><span class="chip">SQL Server (SSMS)</span><span class="chip">Data Modeling (Star Schema)</span><span class="chip">Jupyter Notebook</span><span class="chip">Google Colab</span><span class="chip">Git &amp; GitHub</span><span class="chip">Data Storytelling</span><span class="chip">Stakeholder Communication</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="block-inner">
+      <h2 style="font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700">Looking for an analyst who closes the loop?</h2>
+      <p>I'm open to Data Analyst and Business Intelligence roles and internships. Happy to walk you through any dashboard or query in these case studies.</p>
+      <div class="center-actions">
+        <a class="btn" href="mailto:shaik.sameer.hussain12@gmail.com">shaik.sameer.hussain12@gmail.com</a>
+        <a class="btn btn-outline" href="tel:+917569283071">+91 7569283071</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 Shaik Sameer Hussain</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="https://github.com/ShaikSameerHussain12" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/shaik-sameer-hussain-425a012bb/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:shaik.sameer.hussain12@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var hero = document.querySelector('header + main section, main > section');
+  var heroTargets = hero ? hero.querySelectorAll(':scope .chip, :scope h1, :scope > div > p, :scope .btn-row, :scope .actions') : [];
+  var i = 0;
+  Array.prototype.forEach.call(heroTargets, function (el) {
+    if (el.closest('.metrics')) return;
+    el.classList.add('hero-enter');
+    el.style.setProperty('--d', (i++ * 90) + 'ms');
+  });
+
+  var groups = [
+    ['.metrics > *', 90],
+    ['section h2', 0],
+    ['section > div > p.mono, section .eyebrow', 0],
+    ['.card', 110],
+    ['.grid > *', 100]
+  ];
+  var seen = new Set();
+  var items = [];
+  groups.forEach(function (g) {
+    var idx = 0;
+    document.querySelectorAll(g[0]).forEach(function (el) {
+      if (seen.has(el) || el.classList.contains('hero-enter') || el.closest('.hero-enter')) return;
+      seen.add(el);
+      el.classList.add('reveal');
+      el.style.setProperty('--d', (idx++ * g[1]) + 'ms');
+      items.push(el);
+    });
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
